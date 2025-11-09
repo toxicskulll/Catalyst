@@ -2,8 +2,6 @@
 
 <div align="center">
 
-![catalyst Logo](https://via.placeholder.com/200x200/6366f1/ffffff?text=catalyst)
-
 **was.is.will be.for students**
 
 *A cutting-edge, AI-powered placement management platform designed to revolutionize campus recruitment and student career development.*
