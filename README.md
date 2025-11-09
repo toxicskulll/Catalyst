@@ -6,33 +6,6 @@ A cutting-edge, AI-powered placement management platform designed to revolutioni
 
 ---
 
-## 🎯 Project Title
-**catalyst** - AI-Powered College Placement Management Portal
-
-## 📌 Chosen Problem Statement
-**Problem Statement 2: College Placement Management Portal**
-
-Traditional college placement management systems face numerous challenges in efficiently managing the entire placement lifecycle. Manual processes, lack of real-time insights, and limited student support tools create bottlenecks in the placement process. catalyst addresses these challenges by providing a comprehensive, AI-powered solution that streamlines placement operations, enhances student readiness, and empowers institutions with data-driven insights.
-
-### Key Problems Addressed:
-
-1. **Inefficient Manual Processes**: Traditional systems require extensive manual work for job postings, application management, and interview scheduling, leading to delays and errors.
-
-2. **Lack of Student Readiness Assessment**: Students struggle to understand their placement readiness and receive personalized guidance to improve their chances of placement.
-
-3. **Limited Predictive Analytics**: Both students and institutions lack insights into placement probabilities and trends, making it difficult to make informed decisions.
-
-4. **Fragmented Communication**: Communication between TPOs, students, and companies is scattered, leading to missed opportunities and coordination issues.
-
-5. **No AI-Powered Career Guidance**: Students lack access to intelligent tools for interview preparation, resume optimization, and career path recommendations.
-
-6. **Inadequate Reporting & Analytics**: Institutions struggle with generating comprehensive reports and analyzing placement data for strategic decision-making.
-
-### Our Solution:
-catalyst provides an all-in-one, AI-powered placement management platform that automates workflows, offers predictive analytics, delivers personalized career guidance, and enhances overall placement efficiency through advanced AI tools and modern web technologies.
-
----
-
 ## 📋 Table of Contents
 
 - [Project Title](#-project-title)
@@ -76,17 +49,6 @@ catalyst provides an all-in-one, AI-powered placement management platform that a
 - 🔒 **Secure & Scalable**: Built with security best practices and scalable architecture
 - 🚀 **All-in-One Platform**: Complete solution from job posting to offer letter management
 - ✨ **Custom Design System**: Reusable UI components with Tailwind CSS, Framer Motion animations, and glassmorphic effects
-
----
-
-## 👥 Team Members & Roles
-
-| Name | Role | Key Responsibilities |
-|------|------|---------------------|
-| **M Krishna Prasad** | Backend Developer | • Backend API development & architecture<br>• Database design & MongoDB optimization<br>• AI integration with Groq API<br>• Server-side logic & middleware<br>• API endpoints & routing<br>• Authentication & authorization |
-| **Aadishesh Gopal Padasalgi** | Frontend Developer | • React.js frontend development<br>• UI/UX design & implementation<br>• Theme system & animations<br>• Component development<br>• User interface optimization<br>• State management & routing |
-| **Kshitij H** | Full-Stack Developer | • Feature development & integration<br>• API integration & testing<br>• Component development<br>• Bug fixes & optimization<br>• Cross-functional development<br>• End-to-end feature implementation |
-| **Ganesh C** | UI/UX Designer & Developer | • UI/UX design & wireframing<br>• Frontend component styling<br>• Theme customization<br>• User interface enhancements<br>• Design system implementation<br>• User experience optimization |
 
 ---
 
