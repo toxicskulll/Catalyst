@@ -28,7 +28,6 @@
 - [Installation](#-installation)
 - [Project Structure](#-project-structure)
 - [User Roles](#-user-roles)
-- [Screenshots](#-screenshots)
 - [Deployment](#-deployment)
 - [API Documentation](#-api-documentation)
 - [Contributing](#-contributing)
