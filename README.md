@@ -836,6 +836,8 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ### ⭐ Star this project if you find it helpful!
 
+<a href="https://github.com/krishnavinu/cicada/graphs/contributors"><img src="https://contrib.rocks/image?repo=krishnavinu/cicada" /></a>
+
 **Made with ❤️ for students**
 
 **catalyst** - *was.is.will be.for students*
@@ -844,6 +846,6 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 [Report Bug](https://github.com/your-username/catalyst/issues) • [Request Feature](https://github.com/your-username/catalyst/issues) • [Documentation](./docs) • [Changelog](./CHANGELOG.md)
 
-**© 2024 catalyst. All rights reserved.**
+**© 2025 catalyst. All rights reserved.**
 
 </div>
