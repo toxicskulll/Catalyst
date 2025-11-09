@@ -631,29 +631,6 @@ catalyst/
 
 ---
 
-## 📸 Screenshots
-
-<div align="center">
-
-### Landing Page
-![Landing Page](https://via.placeholder.com/800x450/6366f1/ffffff?text=Landing+Page)
-
-### Student Dashboard
-![Student Dashboard](https://via.placeholder.com/800x450/6366f1/ffffff?text=Student+Dashboard)
-
-### AI Interview Simulator
-![AI Interview](https://via.placeholder.com/800x450/6366f1/ffffff?text=AI+Interview+Simulator)
-
-### Resume Builder
-![Resume Builder](https://via.placeholder.com/800x450/6366f1/ffffff?text=Resume+Builder)
-
-### Analytics Dashboard
-![Analytics](https://via.placeholder.com/800x450/6366f1/ffffff?text=Analytics+Dashboard)
-
-</div>
-
----
-
 ## 🚢 Deployment
 
 ### Docker Deployment
