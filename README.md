@@ -837,6 +837,9 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 ### ⭐ Star this project if you find it helpful!
 
 <a href="https://github.com/krishnavinu/cicada/graphs/contributors"><img src="https://contrib.rocks/image?repo=krishnavinu/cicada" /></a>
+<a href="https://github.com/Kshitij1105" style="text-decoration: none"><img src="https://contrib.rocks/image?repo=Kshitij1105/Kshitij1105"/></a>
+<a href="https://github.com/Ganeshc-web" style="text-decoration: none"><img src="https://contrib.rocks/image?repo=Ganeshc-web/Ganeshc-web"/></a>
+
 
 **Made with ❤️ for students**
 
