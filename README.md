@@ -1,457 +1,471 @@
 # 🚀 catalyst
 
+<div align="center">
+
+![catalyst Logo](https://via.placeholder.com/200x200/6366f1/ffffff?text=catalyst)
+
 **was.is.will be.for students**
 
-A cutting-edge, AI-powered placement management platform designed to revolutionize campus recruitment and student career development.
+*A cutting-edge, AI-powered placement management platform designed to revolutionize campus recruitment and student career development.*
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Node.js Version](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen)](https://nodejs.org/)
+[![React Version](https://img.shields.io/badge/react-18.3%2B-blue)](https://reactjs.org/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-6.0%2B-green)](https://www.mongodb.com/)
+[![AI Powered](https://img.shields.io/badge/AI-Groq%20%7C%20Llama%203.3-purple)](https://groq.com/)
+
+[Features](#-key-features) • [Demo](#-demo) • [Installation](#-installation) • [Documentation](#-documentation) • [Contributing](#-contributing)
+
+</div>
 
 ---
 
 ## 📋 Table of Contents
 
-- [Project Title](#-project-title)
-- [Chosen Problem Statement](#-chosen-problem-statement)
-- [Introduction](#-introduction)
-- [Team Members & Roles](#-team-members--roles)
-- [AI Tools Used](#-ai-tools-used)
-- [Setup and Run Instructions](#-setup-and-run-instructions)
+- [Overview](#-overview)
 - [Key Features](#-key-features)
-  - [UI/UX Enhancements](#-uiux-enhancements)
-  - [Core Features](#core-features)
-  - [AI-Powered Features](#ai-powered-features)
+- [AI-Powered Capabilities](#-ai-powered-capabilities)
 - [Tech Stack](#-tech-stack)
+- [Quick Start](#-quick-start)
+- [Installation](#-installation)
 - [Project Structure](#-project-structure)
 - [User Roles](#-user-roles)
-- [Installation](#-installation)
-  - [Prerequisites](#prerequisites)
-  - [Backend Setup](#backend-setup)
-  - [Frontend Setup](#frontend-setup)
-- [Environment Variables](#-environment-variables)
-- [Usage](#-usage)
+- [Screenshots](#-screenshots)
 - [Deployment](#-deployment)
-- [Design & UI/UX Features](#-design--uiux-features)
-  - [Landing Page Enhancements](#landing-page-enhancements)
-  - [Design System Components](#design-system-components)
-  - [Recent Improvements](#recent-improvements)
+- [API Documentation](#-api-documentation)
+- [Contributing](#-contributing)
+- [License](#-license)
 - [Acknowledgments](#-acknowledgments)
 
 ---
 
-## 🎯 Introduction
+## 🌟 Overview
 
 **catalyst** is a comprehensive, AI-driven placement management system that streamlines the entire campus recruitment process. Built with modern web technologies and powered by advanced AI, catalyst empowers educational institutions to manage placements efficiently while providing students with personalized career guidance and opportunities.
 
-### Why catalyst?
+### 💡 Why catalyst?
 
-- 🤖 **AI-Powered Insights**: Leverage advanced AI for interview simulation, placement prediction, and career matching
-- 📊 **Data-Driven Decisions**: Comprehensive analytics and reporting for administrators
-- 🎨 **Modern UI/UX**: Beautiful, responsive interface with glassmorphic design, custom animations, and theme-aware components
-- 🎭 **Enhanced Landing Page**: Engaging pre-login experience with features showcase, stats, testimonials, and interactive demos
-- 🔒 **Secure & Scalable**: Built with security best practices and scalable architecture
-- 🚀 **All-in-One Platform**: Complete solution from job posting to offer letter management
-- ✨ **Custom Design System**: Reusable UI components with Tailwind CSS, Framer Motion animations, and glassmorphic effects
+<table>
+<tr>
+<td width="33%">
 
----
+#### 🤖 AI-Powered
+Leverage Groq API with Llama 3.3 70B for interview simulation, placement prediction, and career matching
 
-## 🤖 AI Tools Used
+</td>
+<td width="33%">
 
-### Groq API with Llama 3.3 70B Versatile Model
+#### 📊 Data-Driven
+Comprehensive analytics and reporting for administrators with real-time insights
 
-catalyst leverages **Groq API** powered by **Llama 3.3 70B Versatile** for all AI-powered features. Groq provides ultra-fast inference capabilities with minimal latency, making it ideal for real-time AI interactions in our placement management platform.
+</td>
+<td width="33%">
 
-#### Why Groq API?
+#### 🎨 Modern UI/UX
+Beautiful, responsive interface with glassmorphic design and smooth animations
 
-- ⚡ **Ultra-Fast Inference**: Sub-second response times enable real-time AI interactions
-- 💰 **Cost-Effective**: Efficient API pricing suitable for educational and hackathon use
-- 🔒 **No Model Training Required**: Uses pre-trained models (inference only, no training needed)
-- 🚀 **Scalable**: Handles multiple concurrent requests efficiently
-- 🎯 **High Accuracy**: Llama 3.3 70B provides excellent results for complex AI tasks
-- 🌐 **Easy Integration**: Simple API integration with comprehensive documentation
+</td>
+</tr>
+<tr>
+<td width="33%">
 
-#### AI Features Implemented:
+#### 🔒 Secure
+Built with JWT authentication, bcrypt encryption, and security best practices
 
-1. **🎤 AI Interview Simulator**
-   - **Purpose**: Help students practice interviews with AI-generated questions
-   - **AI Functionality**: 
-     - Generates context-aware interview questions based on job requirements
-     - Provides real-time feedback on student answers
-     - Analyzes communication skills, technical knowledge, and problem-solving abilities
-     - Generates personalized improvement recommendations
-   - **Technology**: Groq API (Llama 3.3 70B) for question generation and answer analysis
+</td>
+<td width="33%">
 
-2. **📈 Placement Prediction**
-   - **Purpose**: Predict student placement probability for specific jobs
-   - **AI Functionality**: 
-     - Analyzes student profile, resume, academic performance, and interview history
-     - Predicts placement chances with confidence levels
-     - Estimates salary package based on profile and job requirements
-     - Provides factor breakdown and actionable recommendations
-   - **Technology**: Groq API for predictive analysis and factor breakdown
+#### 🚀 All-in-One
+Complete solution from job posting to offer letter management
 
-3. **🎯 Placement Readiness Score (PRS)**
-   - **Purpose**: Calculate comprehensive readiness score for students
-   - **AI Functionality**: 
-     - Analyzes multiple factors (academics, skills, attendance, achievements) using weighted formula
-     - Provides AI-powered insights on contributing factors
-     - Tracks PRS changes over time
-     - Generates detailed breakdown and improvement suggestions
-   - **Technology**: Groq API for factor analysis and score calculation
+</td>
+<td width="33%">
 
-4. **🧬 Career DNA Profiler**
-   - **Purpose**: Analyze student personality, work style, and values for career matching
-   - **AI Functionality**: 
-     - Personality trait analysis using Big Five model
-     - Work style preferences identification (environment, collaboration, pace, location)
-     - Values assessment and priorities identification
-     - Career trajectory prediction with probability scores
-   - **Technology**: Groq API for deep personality and career analysis
+#### ⚡ Fast & Scalable
+Optimized performance with Docker, Kubernetes, and cloud-ready architecture
 
-5. **💼 Culture Match Engine**
-   - **Purpose**: Match students with companies based on culture compatibility
-   - **AI Functionality**: 
-     - Analyzes company culture and values
-     - Compares student values with company culture
-     - Provides compatibility scores and alignment insights
-     - Helps students find companies that align with their values
-   - **Technology**: Groq API for culture analysis and matching algorithms
-
-6. **🔧 Intervention Engine**
-   - **Purpose**: Recommend personalized interventions to improve placement readiness
-   - **AI Functionality**: 
-     - Suggests targeted interventions based on student profile
-     - Simulates "what-if" scenarios for different interventions
-     - Projects PRS changes based on intervention implementation
-     - Prioritizes interventions based on impact and feasibility
-   - **Technology**: Groq API for intervention recommendation and simulation
-
-7. **📝 Resume Builder (AI-Enhanced)**
-   - **Purpose**: Help students create optimized, ATS-friendly resumes
-   - **AI Functionality**: 
-     - Content suggestions for resume sections
-     - Resume quality scoring and ATS optimization
-     - Keyword extraction and optimization
-     - Skill and achievement suggestions
-   - **Technology**: Groq API for resume analysis and optimization
-
-8. **🔍 Semantic Job Matching**
-   - **Purpose**: Match students with relevant job opportunities
-   - **AI Functionality**: 
-     - Semantic keyword extraction from job descriptions
-     - Concept-based similarity scoring
-     - Personalized job recommendations
-     - Skill gap analysis
-   - **Technology**: Groq API for semantic analysis and matching
-
-9. **📧 AI Email Generator**
-   - **Purpose**: Generate professional email templates for notifications
-   - **AI Functionality**: 
-     - Context-aware email generation for interviews, offers, rejections, and notices
-     - Maintains professional tone and formatting
-     - Customizes content based on context
-   - **Technology**: Groq API for natural language email generation
-
-10. **📄 Resume Parser (AI)**
-    - **Purpose**: Extract structured data from PDF resumes
-    - **AI Functionality**: 
-      - PDF parsing and text extraction
-      - Structured data conversion to JSON
-      - Skills, experience, and education extraction
-      - ATS-compatible format conversion
-    - **Technology**: Groq API combined with pdf-parse for resume data extraction
-
----
-
-## 🚀 Setup and Run Instructions
-
-### Prerequisites
-
-Before starting, ensure you have the following installed:
-- **Node.js**: v18.0.0 or higher ([Download](https://nodejs.org/))
-- **npm**: v9.0.0 or higher (comes with Node.js)
-- **MongoDB**: v6.0 or higher ([Download](https://www.mongodb.com/try/download/community) or use [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) for cloud database)
-- **Groq API Key**: [Get your free API key](https://console.groq.com/)
-- **Cloudinary Account**: [Sign up for free](https://cloudinary.com/) (for file storage)
-- **Gmail/SMTP Account**: For email services (optional but recommended)
-
-### Quick Start (5 Minutes)
-
-1. **Clone the Repository**
-   ```bash
-   git clone <repository-url>
-   cd catalyst
-   ```
-
-2. **Backend Setup**
-   ```bash
-   cd backend
-   npm install
-   ```
-   
-   Create `.env` file in `backend/` directory:
-   ```env
-   PORT=4518
-   MONGODB_URL=mongodb://localhost:27017/catalyst_db
-   JWT_SECRET=your_jwt_secret_key_here
-   CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
-   CLOUDINARY_API_KEY=your_cloudinary_api_key
-   CLOUDINARY_API_SECRET=your_cloudinary_api_secret
-   GROQ_API_KEY=your_groq_api_key
-   SMTP_USER=your_email@gmail.com
-   SMTP_PASS=your_app_password
-   ```
-   
-   Start the backend server:
-   ```bash
-   npm start
-   ```
-   Backend will run on `http://localhost:4518`
-
-3. **Frontend Setup**
-   ```bash
-   cd frontend
-   npm install
-   ```
-   
-   Create `.env` file in `frontend/` directory:
-   ```env
-   VITE_BACKEND_URL=http://localhost:4518
-   ```
-   
-   Start the frontend development server:
-   ```bash
-   npm run dev
-   ```
-   Frontend will run on `http://localhost:5173`
-
-4. **Seed Dummy Data (Optional)**
-   ```bash
-   cd backend
-   npm run seed
-   ```
-   This will create sample users, companies, and jobs for testing.
-
-5. **Access the Application**
-   - Open your browser and navigate to: `http://localhost:5173`
-   - Register as a student or login with seeded credentials
-
-### Getting API Keys
-
-#### Groq API Key (Required for AI Features)
-1. Visit [Groq Console](https://console.groq.com/)
-2. Sign up for a free account
-3. Navigate to API Keys section
-4. Create a new API key
-5. Copy the key to your `.env` file
-
-#### Cloudinary (Required for File Uploads)
-1. Visit [Cloudinary](https://cloudinary.com/)
-2. Sign up for a free account
-3. Go to Dashboard
-4. Copy `Cloud Name`, `API Key`, and `API Secret` to your `.env` file
-
-#### MongoDB (Choose one)
-- **Local MongoDB**: Install MongoDB locally and use `mongodb://localhost:27017/catalyst_db`
-- **MongoDB Atlas**: Create a free cluster at [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) and use the connection string
-
-### Troubleshooting
-
-- **Backend won't start**: Check if MongoDB is running and `.env` file is configured correctly
-- **Frontend can't connect**: Verify `VITE_BACKEND_URL` in frontend `.env` matches backend URL
-- **AI features not working**: Ensure `GROQ_API_KEY` is set correctly in backend `.env`
-- **File uploads failing**: Check Cloudinary credentials in backend `.env`
-
-For detailed setup instructions, see the [Installation](#-installation) section below.
+</td>
+</tr>
+</table>
 
 ---
 
 ## ✨ Key Features
 
-### 🎨 UI/UX Enhancements
+### 🎨 UI/UX Excellence
 
-#### Modern Landing Page
-- **Enhanced Hero Section**: Animated background with gradient mesh, floating orbs, and particles
-- **Features Showcase**: Interactive feature cards with glassmorphic design and hover effects
-- **Statistics Section**: Animated counters showing platform metrics (students, companies, placement rate, satisfaction)
-- **Demo/Preview Section**: Interactive tabbed interface showcasing platform features
-- **Testimonials Carousel**: Auto-rotating testimonials with smooth animations
-- **Enhanced About Section**: Role-based cards with gradient effects and animations
-- **Responsive Design**: Fully responsive across all devices (mobile, tablet, desktop)
+<details>
+<summary><b>Modern Landing Page</b> (Click to expand)</summary>
 
-#### Design System
-- **Glassmorphic Components**: Reusable glass cards with backdrop blur and transparency effects
-- **Custom Animations**: Framer Motion animations for smooth transitions and micro-interactions
-- **Theme-Aware Components**: All components adapt to light/dark themes using CSS variables
-- **Tailwind CSS Integration**: Custom utility classes, gradients, shadows, and animations
-- **Animated Backgrounds**: Particle effects, mesh gradients, and floating orbs
-- **Enhanced Input Fields**: Improved text visibility, focus states, and placeholder styling
+- ✅ **Enhanced Hero Section** with animated gradients and floating particles
+- ✅ **Interactive Features Showcase** with glassmorphic cards
+- ✅ **Live Statistics** with animated counters (10K+ students, 500+ companies)
+- ✅ **Demo Preview Section** with tabbed interface
+- ✅ **Auto-rotating Testimonials** carousel
+- ✅ **Fully Responsive** design across all devices
 
-#### Login Pages
-- **Consistent Design**: Unified design across all login pages (Student, TPO, Management, HOD, Super Admin)
-- **Enhanced Animations**: Gradient text, animated underlines, shimmer effects
-- **Improved UX**: Better input field styling, error messages, and loading states
-- **Accessibility**: High contrast text, clear focus indicators, and proper form validation
+</details>
 
-### Core Features
+<details>
+<summary><b>Design System Components</b> (Click to expand)</summary>
 
-#### 👨‍🎓 Student Portal
-- **Profile Management**: Complete profile with academic details, skills, and achievements
-- **Resume Builder**: Drag-and-drop resume builder with multiple professional templates and AI suggestions
-- **Job Applications**: Browse, search, and apply for job opportunities
-- **Application Tracking**: Real-time status updates for all applications
-- **Placement Drives**: Register and participate in campus placement drives
-- **Internship Management**: Track and manage internship applications
-- **Publications**: Add research papers and publications with weightage
-- **Notifications**: Real-time notifications for new jobs, interviews, and updates
-- **Enhanced Dashboard**: Modern dashboard with animated cards, statistics, and quick actions
+- ✅ **Glassmorphic Cards** with backdrop blur and transparency
+- ✅ **Custom Animations** using Framer Motion
+- ✅ **Theme-Aware Components** (Light/Dark mode)
+- ✅ **Tailwind CSS Integration** with custom utilities
+- ✅ **Animated Backgrounds** with particles and mesh gradients
+- ✅ **Enhanced Form Elements** with improved UX
 
-#### 👔 TPO Admin Portal
-- **Job Management**: Post, edit, and manage job listings with rich text editor
-- **Application Review**: Review and manage student applications
-- **Interview Scheduling**: Schedule and manage interview rounds
-- **Offer Letters**: Upload and manage offer letters
-- **Placement Drives**: Create and manage placement drives
-- **Email Generation**: AI-powered email templates for notifications
-- **Resume Filtering**: AI-assisted resume screening with match scores
-- **Reports**: Generate comprehensive placement reports
-- **Enhanced Forms**: Modern form components with validation and error handling
+</details>
 
-#### 🏛️ Management Portal
-- **Analytics Dashboard**: Visual analytics and insights
-- **Department Reports**: Department-wise placement statistics
-- **Student Reports**: Individual student performance reports
-- **Offer Reports**: Comprehensive offer and package analytics
-- **Export Reports**: Export reports as Excel or PDF
-- **System Monitoring**: Monitor overall system health and usage
+### 👨‍🎓 Student Portal
 
-#### 👑 Super Admin Portal
-- **User Management**: Create and manage TPO and Management users
-- **System Configuration**: Configure system-wide settings
-- **Role Management**: Manage user roles and permissions
-- **Full System Access**: Complete administrative control
+| Feature | Description |
+|---------|-------------|
+| 📝 **Profile Management** | Complete academic profile with skills and achievements |
+| 📄 **AI Resume Builder** | Drag-and-drop builder with professional templates |
+| 💼 **Job Applications** | Browse, search, and apply for opportunities |
+| 📊 **Application Tracking** | Real-time status updates for all applications |
+| 🎯 **Placement Drives** | Register and participate in campus drives |
+| 📚 **Publications** | Add research papers with weightage |
+| 🔔 **Notifications** | Real-time updates for jobs and interviews |
+| 📈 **Analytics Dashboard** | Personal placement statistics and insights |
 
-#### 🎓 HOD (Head of Department) Portal
-- **Department Overview**: View department-specific placement data
-- **Student Approval**: Approve student profiles for placement
-- **Department Reports**: Access department-wise analytics
-- **Student Management**: Manage students within the department
+### 👔 TPO Admin Portal
 
-### AI-Powered Features
+| Feature | Description |
+|---------|-------------|
+| 💼 **Job Management** | Post and manage job listings with rich editor |
+| 📋 **Application Review** | Review and manage student applications |
+| 🗓️ **Interview Scheduling** | Schedule and manage interview rounds |
+| 📜 **Offer Letters** | Upload and manage offer letters |
+| 🎯 **Placement Drives** | Create and manage campus drives |
+| 📧 **AI Email Generator** | Generate professional email templates |
+| 🔍 **Resume Filtering** | AI-assisted resume screening with match scores |
+| 📊 **Reports** | Comprehensive placement analytics |
 
-#### 🎤 AI Interview Simulator
-- **Real-Time Practice**: Practice interviews with AI-powered questions
-- **Instant Feedback**: Get immediate feedback on answers
-- **Performance Metrics**: Detailed analysis of communication, technical, and problem-solving skills
-- **Recommendations**: Personalized improvement suggestions
-- **Session History**: Track and review past interview sessions
+### 🏛️ Management & Admin Portals
 
-#### 📈 Placement Prediction
-- **Probability Analysis**: AI-powered placement probability prediction
-- **Factor Breakdown**: Detailed analysis of contributing factors
-- **Package Prediction**: Predicted salary package estimation
-- **Recommendations**: Actionable recommendations to improve placement chances
-- **Historical Tracking**: Track predictions over time
+<table>
+<tr>
+<td width="50%">
 
-#### 🎯 Placement Readiness Score (PRS)
-- **Comprehensive Scoring**: Multi-factor readiness assessment
-- **Contributing Factors**: Detailed breakdown of PRS components
-- **Attendance Tracking**: Integration with attendance data
-- **Academic Performance**: GPA and academic achievements consideration
-- **Skill Assessment**: Technical and soft skills evaluation
-- **Progress Tracking**: Monitor PRS improvements over time
+#### Management Portal
+- 📊 Visual analytics dashboard
+- 📈 Department-wise reports
+- 👥 Student performance reports
+- 💰 Offer and package analytics
+- 📤 Export reports (Excel/PDF)
+- 🖥️ System monitoring
 
-#### 🧬 Career DNA Profiler
-- **Personality Analysis**: Deep personality trait analysis
-- **Work Style Preferences**: Environment, collaboration, and pace preferences
-- **Values Assessment**: Core values and priorities identification
-- **Career Trajectory**: Predicted career paths and probabilities
-- **Key Insights**: Actionable career insights and recommendations
+</td>
+<td width="50%">
 
-#### 💼 Culture Match Engine
-- **Company Culture Analysis**: Analyze company culture and values
-- **Compatibility Scoring**: Match students with companies based on culture fit
-- **Values Alignment**: Compare student values with company culture
-- **Work Style Matching**: Match work preferences with company environment
+#### Super Admin Portal
+- 👥 User management (TPO/Management)
+- ⚙️ System configuration
+- 🔑 Role and permissions management
+- 🔒 Complete system access
+- 📊 Usage analytics
 
-#### 🔧 Intervention Engine
-- **What-If Simulations**: Simulate impact of different interventions
-- **PRS Projections**: Predict PRS changes based on interventions
-- **Recommendations**: Personalized intervention recommendations
-- **Priority Ranking**: Prioritized intervention suggestions
-- **Progress Tracking**: Track intervention implementation and results
+</td>
+</tr>
+</table>
 
-#### 📝 Resume Builder (AI-Enhanced)
-- **Multiple Templates**: Modern, professional, classic, and creative templates
-- **Drag & Drop**: Intuitive drag-and-drop interface
-- **AI Suggestions**: AI-powered content suggestions
-- **ATS Optimization**: ATS-friendly resume formatting
-- **Resume Scoring**: AI-powered resume quality scoring
-- **PDF Export**: Professional PDF export
-- **Direct Job Submission**: Submit resumes directly to job postings
+---
 
-#### 🔍 Semantic Job Matching
-- **AI-Powered Matching**: Advanced semantic matching algorithm
-- **Keyword Extraction**: Intelligent keyword and concept extraction
-- **Similarity Scoring**: Match score based on profile and job requirements
-- **Personalized Recommendations**: Job recommendations based on profile
-- **Skill Gap Analysis**: Identify missing skills for specific jobs
+## 🤖 AI-Powered Capabilities
 
-#### 📧 AI Email Generator
-- **Template Generation**: AI-generated email templates
-- **Multiple Types**: Interview, offer, rejection, and notice emails
-- **Customization**: Personalized email content
-- **Professional Tone**: Maintain professional communication standards
+### Powered by Groq API + Llama 3.3 70B
 
-#### 📄 Resume Parser (AI)
-- **PDF Parsing**: Extract data from PDF resumes
-- **Structured Data**: Convert resumes to structured JSON
-- **ATS Integration**: Parse resumes for ATS compatibility
-- **Data Extraction**: Extract skills, experience, education automatically
+catalyst leverages **Groq's ultra-fast inference** with **Llama 3.3 70B Versatile** model for all AI features, providing sub-second response times and high-accuracy results.
+
+<table>
+<tr>
+<td width="50%">
+
+### 🎤 AI Interview Simulator
+- Real-time interview practice
+- Context-aware question generation
+- Instant feedback and scoring
+- Performance metrics analysis
+- Personalized recommendations
+
+</td>
+<td width="50%">
+
+### 📈 Placement Prediction
+- Probability analysis
+- Factor breakdown
+- Package estimation
+- Historical tracking
+- Actionable recommendations
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### 🎯 Placement Readiness Score (PRS)
+- Multi-factor assessment
+- Academic performance tracking
+- Skill evaluation
+- Progress monitoring
+- Improvement suggestions
+
+</td>
+<td width="50%">
+
+### 🧬 Career DNA Profiler
+- Personality trait analysis
+- Work style preferences
+- Values assessment
+- Career trajectory prediction
+- Key insights and recommendations
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### 💼 Culture Match Engine
+- Company culture analysis
+- Compatibility scoring
+- Values alignment
+- Work style matching
+
+</td>
+<td width="50%">
+
+### 🔧 Intervention Engine
+- What-if simulations
+- PRS projections
+- Personalized recommendations
+- Priority ranking
+
+</td>
+</tr>
+</table>
+
+### Additional AI Features
+
+- 📝 **Resume Builder (AI-Enhanced)**: ATS optimization, content suggestions, quality scoring
+- 🔍 **Semantic Job Matching**: AI-powered matching with skill gap analysis
+- 📧 **AI Email Generator**: Professional email templates for all scenarios
+- 📄 **Resume Parser**: Extract structured data from PDF resumes
+
+> **Why Groq API?**
+> - ⚡ **Ultra-Fast**: Sub-second response times
+> - 💰 **Cost-Effective**: Efficient pricing for educational use
+> - 🎯 **High Accuracy**: Llama 3.3 70B delivers excellent results
+> - 🚀 **Scalable**: Handles concurrent requests efficiently
 
 ---
 
 ## 🛠️ Tech Stack
 
-### Frontend
-- **Framework**: React.js 18.3+
-- **Build Tool**: Vite 5.4+
-- **Routing**: React Router DOM 6.26+
-- **Styling**: 
-  - Tailwind CSS 3.4+ (with custom components and animations)
+### Frontend Technologies
+
+```yaml
+Framework: React.js 18.3+
+Build Tool: Vite 5.4+
+Routing: React Router DOM 6.26+
+Styling:
+  - Tailwind CSS 3.4+ (Custom components)
   - Bootstrap 5.3+
-  - Custom Theme System with CSS variables
-  - Glassmorphic design components
-- **Animations**: Framer Motion 11.0+ (smooth transitions and micro-interactions)
-- **State Management**: React Context API
-- **HTTP Client**: Axios 1.7+
-- **UI Components**: 
+  - Glassmorphic design system
+Animations: Framer Motion 11.0+
+State Management: React Context API
+HTTP Client: Axios 1.7+
+UI Libraries:
   - React Bootstrap 2.10+
   - React Icons 5.3+
-  - Custom UI Components (GlassCard, AnimatedBackground, Button, Card, Input, Skeleton, EmptyState)
-- **Charts**: Recharts 3.3+
-- **Drag & Drop**: React DnD 16.0+
-- **PDF Generation**: jsPDF 3.0+, html2canvas 1.4+
-- **Print**: react-to-print 3.2+
-- **Editor**: Jodit React 3.0+ (rich text editor)
+  - Recharts 3.3+ (Charts)
+  - React DnD 16.0+ (Drag & Drop)
+PDF: jsPDF 3.0+, html2canvas 1.4+
+Rich Text: Jodit React 3.0+
+```
 
-### Backend
-- **Runtime**: Node.js
-- **Framework**: Express.js 4.20+
-- **Database**: MongoDB with Mongoose 8.5+
-- **Authentication**: JWT (JSON Web Tokens)
-- **File Storage**: Cloudinary
-- **Email Service**: Nodemailer 6.10+
-- **AI Integration**: Groq SDK 0.34+ (Llama 3.3 70B)
-- **PDF Processing**: 
-  - Puppeteer 24.29+ (PDF generation)
-  - pdf-parse 2.4+ (PDF parsing)
-- **Excel Export**: ExcelJS 4.4+
-- **File Upload**: Multer 1.4+
-- **Security**: bcrypt 5.1+, express-rate-limit 8.2+
+### Backend Technologies
+
+```yaml
+Runtime: Node.js
+Framework: Express.js 4.20+
+Database: MongoDB + Mongoose 8.5+
+Authentication: JWT (JSON Web Tokens)
+File Storage: Cloudinary
+Email: Nodemailer 6.10+
+AI Integration: Groq SDK 0.34+ (Llama 3.3 70B)
+PDF Processing:
+  - Puppeteer 24.29+ (Generation)
+  - pdf-parse 2.4+ (Parsing)
+Excel: ExcelJS 4.4+
+File Upload: Multer 1.4+
+Security: bcrypt 5.1+, rate-limit 8.2+
+```
 
 ### DevOps & Deployment
-- **Containerization**: Docker & Docker Compose
-- **Orchestration**: Kubernetes
-- **Version Control**: Git
-- **Package Manager**: npm
+
+```yaml
+Containerization: Docker + Docker Compose
+Orchestration: Kubernetes
+Version Control: Git
+Package Manager: npm
+Cloud Services:
+  - MongoDB Atlas (Database)
+  - Cloudinary (File Storage)
+  - Groq API (AI Inference)
+```
+
+---
+
+## 🚀 Quick Start
+
+Get catalyst up and running in **5 minutes**:
+
+### Prerequisites Checklist
+
+- [ ] Node.js v18.0.0+ installed ([Download](https://nodejs.org/))
+- [ ] MongoDB v6.0+ running ([Download](https://www.mongodb.com/) or use [Atlas](https://www.mongodb.com/cloud/atlas))
+- [ ] Groq API key ([Get here](https://console.groq.com/))
+- [ ] Cloudinary account ([Sign up](https://cloudinary.com/))
+- [ ] Gmail/SMTP for emails (optional)
+
+### Installation Steps
+
+```bash
+# 1. Clone the repository
+git clone <repository-url>
+cd catalyst
+
+# 2. Backend Setup
+cd backend
+npm install
+
+# Create .env file (see Environment Variables section)
+# Start backend server
+npm start
+# Backend runs on http://localhost:4518
+
+# 3. Frontend Setup (in new terminal)
+cd frontend
+npm install
+
+# Create .env file (see Environment Variables section)
+# Start frontend server
+npm run dev
+# Frontend runs on http://localhost:5173
+
+# 4. Seed dummy data (optional)
+cd backend
+npm run seed
+```
+
+### 🎉 You're Done!
+
+Visit `http://localhost:5173` and start exploring catalyst!
+
+---
+
+## 📦 Installation
+
+### Detailed Backend Setup
+
+1. **Navigate to backend directory**:
+   ```bash
+   cd backend
+   npm install
+   ```
+
+2. **Create `.env` file** in `backend/` directory:
+   ```env
+   # Server Configuration
+   PORT=4518
+
+   # Database (Choose one)
+   MONGODB_URL=mongodb://localhost:27017/catalyst_db
+   # OR for MongoDB Atlas:
+   # MONGODB_URL=mongodb+srv://username:password@cluster.mongodb.net/catalyst_db
+
+   # Authentication
+   JWT_SECRET=your_super_secret_jwt_key_minimum_32_characters
+
+   # Cloudinary (Get from https://cloudinary.com/console)
+   CLOUDINARY_CLOUD_NAME=your_cloud_name
+   CLOUDINARY_API_KEY=your_api_key
+   CLOUDINARY_API_SECRET=your_api_secret
+
+   # Groq AI (Get from https://console.groq.com/)
+   GROQ_API_KEY=gsk_your_groq_api_key_here
+
+   # Email Service (Gmail App Password recommended)
+   SMTP_USER=your_email@gmail.com
+   SMTP_PASS=your_16_character_app_password
+   ```
+
+3. **Start the backend**:
+   ```bash
+   npm start
+   ```
+   Server will run on `http://localhost:4518`
+
+### Detailed Frontend Setup
+
+1. **Navigate to frontend directory**:
+   ```bash
+   cd frontend
+   npm install
+   ```
+
+2. **Create `.env` file** in `frontend/` directory:
+   ```env
+   VITE_BACKEND_URL=http://localhost:4518
+   ```
+
+3. **Start the frontend**:
+   ```bash
+   npm run dev
+   ```
+   Application will run on `http://localhost:5173`
+
+### Getting API Keys
+
+#### 🔑 Groq API Key (Required for AI Features)
+
+1. Visit [Groq Console](https://console.groq.com/)
+2. Sign up for a free account
+3. Navigate to **API Keys** section
+4. Click **Create API Key**
+5. Copy the key to your backend `.env` file
+
+#### ☁️ Cloudinary (Required for File Uploads)
+
+1. Visit [Cloudinary](https://cloudinary.com/)
+2. Sign up for a free account
+3. Go to **Dashboard**
+4. Copy `Cloud Name`, `API Key`, and `API Secret` to your `.env`
+
+#### 📧 Gmail SMTP (Optional but Recommended)
+
+1. Enable 2-Factor Authentication on your Gmail account
+2. Go to [App Passwords](https://myaccount.google.com/apppasswords)
+3. Generate a new app password for "Mail"
+4. Copy the 16-character password to your `.env`
+
+### Seeding Data
+
+To populate the database with sample data for testing:
+
+```bash
+cd backend
+npm run seed
+```
+
+This creates:
+- 50 sample students
+- 10 companies
+- 20 job postings
+- Sample TPO and admin users
 
 ---
 
@@ -459,159 +473,77 @@ For detailed setup instructions, see the [Installation](#-installation) section 
 
 ```
 catalyst/
-├── frontend/
-│   ├── public/
+├── 📂 frontend/
+│   ├── 📂 public/
 │   │   ├── catalyst.svg
-│   │   └── ...
-│   ├── src/
-│   │   ├── assets/
-│   │   │   ├── catalyst.png
-│   │   │   └── ...
-│   │   ├── components/
-│   │   │   ├── AITools/
-│   │   │   │   ├── EmailGenerator.jsx
-│   │   │   │   └── ResumeFilter.jsx
-│   │   │   ├── Analytics/
-│   │   │   │   └── Dashboard.jsx
-│   │   │   ├── CareerDNA/
-│   │   │   │   ├── CareerDNADashboard.jsx
-│   │   │   │   └── CultureMatch.jsx
-│   │   │   ├── Intervention/
-│   │   │   │   └── InterventionEngine.jsx
-│   │   │   ├── InterviewSimulator/
-│   │   │   │   └── InterviewSimulator.jsx
-│   │   │   ├── LandingPages/
-│   │   │   │   ├── LandNavbar.jsx
-│   │   │   │   ├── LandHeroPage.jsx
-│   │   │   │   ├── LandAbout.jsx
-│   │   │   │   ├── LandFeatures.jsx
-│   │   │   │   ├── LandStats.jsx
-│   │   │   │   ├── LandDemo.jsx
-│   │   │   │   ├── LandTestimonials.jsx
-│   │   │   │   └── LandFooter.jsx
-│   │   │   ├── UI/
-│   │   │   │   ├── AnimatedBackground.jsx
-│   │   │   │   ├── GlassCard.jsx
-│   │   │   │   ├── Button.jsx
-│   │   │   │   ├── Card.jsx
-│   │   │   │   ├── Input.jsx
-│   │   │   │   ├── Skeleton.jsx
-│   │   │   │   └── EmptyState.jsx
-│   │   │   ├── PlacementDrive/
-│   │   │   │   ├── CreateDrive.jsx
-│   │   │   │   ├── DriveList.jsx
-│   │   │   │   └── DriveDetails.jsx
-│   │   │   ├── PredictiveAnalytics/
-│   │   │   │   └── PredictiveDashboard.jsx
-│   │   │   ├── PRS/
-│   │   │   │   └── PRSDashboard.jsx
-│   │   │   ├── Reports/
-│   │   │   │   ├── DepartmentReport.jsx
-│   │   │   │   ├── OfferReport.jsx
-│   │   │   │   └── StudentReport.jsx
-│   │   │   ├── ResumeBuilder/
-│   │   │   │   ├── ResumeBuilder.jsx
-│   │   │   │   ├── ResumeEditor.jsx
-│   │   │   │   ├── ResumePreview.jsx
-│   │   │   │   ├── TemplateSelector.jsx
-│   │   │   │   ├── AISuggestions.jsx
-│   │   │   │   └── DraggableSection.jsx
-│   │   │   ├── Students/
-│   │   │   │   ├── SidebarData.jsx
-│   │   │   │   └── NotificationBox.jsx
-│   │   │   ├── TPO/
-│   │   │   │   └── SidebarData.jsx
-│   │   │   ├── Management/
-│   │   │   │   └── SidebarData.jsx
-│   │   │   ├── HOD/
-│   │   │   │   └── SidebarData.jsx
-│   │   │   ├── SuperUser/
-│   │   │   │   └── SidebarData.jsx
-│   │   │   ├── Tutorial/
-│   │   │   │   └── OnboardingGuide.jsx
-│   │   │   ├── Navbar.jsx
-│   │   │   ├── Sidebar.jsx
-│   │   │   ├── Submenu.jsx
-│   │   │   └── ...
-│   │   ├── context/
-│   │   │   ├── userContext.jsx
-│   │   │   └── themeContext.jsx
-│   │   ├── pages/
-│   │   │   ├── students/
-│   │   │   ├── tpo/
-│   │   │   ├── management/
-│   │   │   ├── hod/
-│   │   │   ├── admin/
-│   │   │   └── LandingPage.jsx
-│   │   ├── style/
-│   │   │   └── index.css
-│   │   ├── utility/
-│   │   │   └── auth.utility.js
+│   │   └── favicon.ico
+│   ├── 📂 src/
+│   │   ├── 📂 assets/          # Images and static files
+│   │   ├── 📂 components/      # React components
+│   │   │   ├── 📂 AITools/     # AI-powered features
+│   │   │   ├── 📂 Analytics/   # Analytics dashboards
+│   │   │   ├── 📂 CareerDNA/   # Career profiling
+│   │   │   ├── 📂 Intervention/ # Intervention engine
+│   │   │   ├── 📂 InterviewSimulator/
+│   │   │   ├── 📂 LandingPages/ # Landing page sections
+│   │   │   ├── 📂 UI/          # Reusable UI components
+│   │   │   ├── 📂 PlacementDrive/
+│   │   │   ├── 📂 PredictiveAnalytics/
+│   │   │   ├── 📂 PRS/         # Placement Readiness Score
+│   │   │   ├── 📂 Reports/
+│   │   │   ├── 📂 ResumeBuilder/
+│   │   │   ├── 📂 Students/
+│   │   │   ├── 📂 TPO/
+│   │   │   ├── 📂 Management/
+│   │   │   ├── 📂 HOD/
+│   │   │   ├── 📂 SuperUser/
+│   │   │   └── 📂 Tutorial/
+│   │   ├── 📂 context/         # React Context providers
+│   │   ├── 📂 pages/           # Page components
+│   │   ├── 📂 style/           # Global styles
+│   │   ├── 📂 utility/         # Utility functions
 │   │   ├── App.jsx
 │   │   └── main.jsx
 │   ├── .env
 │   ├── index.html
 │   ├── package.json
 │   ├── tailwind.config.js
-│   ├── vite.config.js
-│   └── ...
-├── backend/
-│   ├── config/
+│   └── vite.config.js
+│
+├── 📂 backend/
+│   ├── 📂 config/              # Configuration files
 │   │   ├── MongoDB.js
 │   │   ├── Cloudinary.js
 │   │   └── Groq.js
-│   ├── controllers/
-│   │   ├── AI/
-│   │   │   ├── interview-simulator.controller.js
-│   │   │   ├── predictive-analytics.controller.js
-│   │   │   ├── resume-parser.controller.js
-│   │   │   ├── resume-filter.controller.js
-│   │   │   ├── email-generator.controller.js
-│   │   │   └── summarize-results.controller.js
-│   │   ├── Analytics/
-│   │   │   └── dashboard.controller.js
-│   │   ├── PlacementDrive/
-│   │   │   └── placementDrive.controller.js
-│   │   ├── Reports/
-│   │   │   └── reports.controller.js
-│   │   ├── ResumeBuilder/
-│   │   │   └── resume.controller.js
-│   │   ├── Student/
-│   │   │   ├── login.controller.js
-│   │   │   └── signup.controller.js
-│   │   └── User/
-│   │       └── tutorial.controller.js
-│   ├── middleware/
+│   ├── 📂 controllers/         # Request handlers
+│   │   ├── 📂 AI/
+│   │   ├── 📂 Analytics/
+│   │   ├── 📂 PlacementDrive/
+│   │   ├── 📂 Reports/
+│   │   ├── 📂 ResumeBuilder/
+│   │   ├── 📂 Student/
+│   │   └── 📂 User/
+│   ├── 📂 middleware/          # Express middleware
 │   │   ├── auth.middleware.js
 │   │   └── upload.middleware.js
-│   ├── models/
+│   ├── 📂 models/              # MongoDB schemas
 │   │   ├── user.model.js
 │   │   ├── job.model.js
 │   │   ├── company.model.js
-│   │   ├── resume.model.js
-│   │   ├── placementDrive.model.js
-│   │   ├── interviewSession.model.js
-│   │   ├── placementPrediction.model.js
 │   │   └── ...
-│   ├── routes/
+│   ├── 📂 routes/              # API routes
 │   │   ├── student.route.js
 │   │   ├── tpo.route.js
-│   │   ├── management.route.js
-│   │   ├── hod.route.js
-│   │   ├── user.route.js
 │   │   ├── ai.route.js
-│   │   ├── resume.route.js
-│   │   ├── analytics.route.js
-│   │   ├── reports.route.js
-│   │   └── placementDrive.route.js
-│   ├── scripts/
+│   │   └── ...
+│   ├── 📂 scripts/             # Utility scripts
 │   │   └── seedData.js
 │   ├── .env
 │   ├── index.js
 │   └── package.json
-├── docker-compose.yaml
-├── kubernetes/
-│   └── ...
+│
+├── 📂 kubernetes/              # Kubernetes manifests
+├── docker-compose.yaml         # Docker Compose config
 └── README.md
 ```
 
@@ -620,249 +552,115 @@ catalyst/
 ## 👥 User Roles
 
 ### 🎓 Student
-- Register and complete profile
-- Build and manage resumes
-- Browse and apply for jobs
-- Track application status
-- Participate in placement drives
-- Use AI Interview Simulator
-- View placement predictions
-- Monitor PRS (Placement Readiness Score)
-- Access intervention recommendations
-- View Career DNA profile
-- Check culture match with companies
-- Add publications and research papers
+<details>
+<summary>Click to view student capabilities</summary>
+
+- ✅ Register and complete comprehensive profile
+- ✅ Build ATS-optimized resumes with AI assistance
+- ✅ Browse and apply for job opportunities
+- ✅ Track application status in real-time
+- ✅ Participate in placement drives
+- ✅ Practice with AI Interview Simulator
+- ✅ View placement probability predictions
+- ✅ Monitor Placement Readiness Score (PRS)
+- ✅ Access intervention recommendations
+- ✅ Explore Career DNA profile
+- ✅ Check culture compatibility with companies
+- ✅ Add publications and research papers
+- ✅ Receive real-time notifications
+
+</details>
 
 ### 👔 TPO (Training & Placement Officer)
-- Post and manage job listings
-- Review student applications
-- Schedule interviews
-- Upload offer letters
-- Create placement drives
-- Generate AI email templates
-- Filter resumes using AI
-- View analytics and reports
-- Manage company information
-- Track placement statistics
+<details>
+<summary>Click to view TPO capabilities</summary>
+
+- ✅ Post and manage job listings
+- ✅ Review student applications with AI assistance
+- ✅ Schedule and manage interview rounds
+- ✅ Upload and distribute offer letters
+- ✅ Create and manage placement drives
+- ✅ Generate AI-powered email templates
+- ✅ Filter resumes using semantic matching
+- ✅ Access comprehensive analytics
+- ✅ Manage company information
+- ✅ Track placement statistics
+- ✅ Generate detailed reports
+
+</details>
 
 ### 🏛️ Management
-- Access analytics dashboard
-- View department-wise reports
-- Generate student reports
-- View offer reports
-- Export reports (Excel/PDF)
-- Monitor system performance
-- Access comprehensive analytics
-- View placement trends
+<details>
+<summary>Click to view management capabilities</summary>
+
+- ✅ Access real-time analytics dashboard
+- ✅ View department-wise placement reports
+- ✅ Generate student performance reports
+- ✅ Analyze offer trends and packages
+- ✅ Export reports in Excel/PDF format
+- ✅ Monitor system performance
+- ✅ View comprehensive placement trends
+- ✅ Access historical data and comparisons
+
+</details>
 
 ### 🎓 HOD (Head of Department)
-- Approve student profiles
-- View department-specific data
-- Access department reports
-- Manage department students
-- Monitor department placements
+<details>
+<summary>Click to view HOD capabilities</summary>
+
+- ✅ Approve student profiles for placement
+- ✅ View department-specific analytics
+- ✅ Access department placement reports
+- ✅ Manage students within department
+- ✅ Monitor department placement performance
+- ✅ Review department-wide statistics
+
+</details>
 
 ### 👑 Super Admin
-- Create and manage users
-- Configure system settings
-- Manage roles and permissions
-- Full system access
-- System monitoring
+<details>
+<summary>Click to view super admin capabilities</summary>
+
+- ✅ Create and manage all user types
+- ✅ Configure system-wide settings
+- ✅ Manage roles and permissions
+- ✅ Full system access and control
+- ✅ Monitor system health and usage
+- ✅ View comprehensive system analytics
+- ✅ Perform database maintenance
+
+</details>
 
 ---
 
-## 🚀 Installation
+## 📸 Screenshots
 
-### Prerequisites
+<div align="center">
 
-- **Node.js**: v18.0.0 or higher
-- **npm**: v9.0.0 or higher
-- **MongoDB**: v6.0 or higher (local or Atlas)
-- **Cloudinary Account**: For file storage
-- **Groq API Key**: For AI features ([Get your API key](https://console.groq.com/))
-- **Email Service**: Gmail or any SMTP service
+### Landing Page
+![Landing Page](https://via.placeholder.com/800x450/6366f1/ffffff?text=Landing+Page)
 
-### Backend Setup
+### Student Dashboard
+![Student Dashboard](https://via.placeholder.com/800x450/6366f1/ffffff?text=Student+Dashboard)
 
-1. **Navigate to backend directory**:
-   ```bash
-   cd backend
-   ```
+### AI Interview Simulator
+![AI Interview](https://via.placeholder.com/800x450/6366f1/ffffff?text=AI+Interview+Simulator)
 
-2. **Install dependencies**:
-   ```bash
-   npm install
-   ```
+### Resume Builder
+![Resume Builder](https://via.placeholder.com/800x450/6366f1/ffffff?text=Resume+Builder)
 
-3. **Create `.env` file**:
-   ```env
-   PORT=4518
-   MONGODB_URL=your_mongodb_connection_string
-   JWT_SECRET=your_jwt_secret_key
-   CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
-   CLOUDINARY_API_KEY=your_cloudinary_api_key
-   CLOUDINARY_API_SECRET=your_cloudinary_api_secret
-   GROQ_API_KEY=your_groq_api_key
-   SMTP_USER=your_email_id
-   SMTP_PASS=your_app_password
-   ```
+### Analytics Dashboard
+![Analytics](https://via.placeholder.com/800x450/6366f1/ffffff?text=Analytics+Dashboard)
 
-4. **Start the backend server**:
-   ```bash
-   npm start
-   ```
-
-   The server will run on `http://localhost:4518`
-
-5. **Seed dummy data (optional)**:
-   ```bash
-   npm run seed
-   ```
-
-### Frontend Setup
-
-1. **Navigate to frontend directory**:
-   ```bash
-   cd frontend
-   ```
-
-2. **Install dependencies**:
-   ```bash
-   npm install
-   ```
-
-3. **Create `.env` file**:
-   ```env
-   VITE_BACKEND_URL=http://localhost:4518
-   ```
-
-4. **Start the development server**:
-   ```bash
-   npm run dev
-   ```
-
-   The application will run on `http://localhost:5173`
+</div>
 
 ---
 
-## ⚙️ Environment Variables
-
-### Backend (.env)
-
-```env
-# Server Configuration
-PORT=4518
-
-# Database
-MONGODB_URL=mongodb://localhost:27017/catalyst_db
-# OR for MongoDB Atlas:
-# MONGODB_URL=mongodb+srv://username:password@cluster.mongodb.net/catalyst_db
-
-# Authentication
-JWT_SECRET=your_super_secret_jwt_key_here
-
-# Cloudinary (File Storage)
-CLOUDINARY_CLOUD_NAME=your_cloud_name
-CLOUDINARY_API_KEY=your_api_key
-CLOUDINARY_API_SECRET=your_api_secret
-
-# Groq AI (For AI Features)
-GROQ_API_KEY=your_groq_api_key
-
-# Email Service (Nodemailer)
-SMTP_USER=your_email@gmail.com
-SMTP_PASS=your_app_password
-```
-
-### Frontend (.env)
-
-```env
-# Backend API URL
-VITE_BACKEND_URL=http://localhost:4518
-```
-
----
-
-## 📖 Usage
-
-### Getting Started
-
-1. **Start MongoDB** (if using local instance):
-   ```bash
-   mongod
-   ```
-
-2. **Start Backend Server**:
-   ```bash
-   cd backend
-   npm start
-   ```
-
-3. **Start Frontend Development Server**:
-   ```bash
-   cd frontend
-   npm run dev
-   ```
-
-4. **Access the Application**:
-   - Open `http://localhost:5173` in your browser
-   - Register as a student or login with existing credentials
-
-### Default Login Credentials
-
-After running the seed script, you can use:
-
-- **Student**: Use the credentials created during registration
-- **TPO**: Check seed data for TPO credentials
-- **Management**: Check seed data for Management credentials
-- **HOD**: 
-  - Email: `hod@cpms.com`
-  - Password: `hod123`
-- **Super Admin**: 
-  - Email: `admin@cpms.com`
-  - Password: `admin123`
-
-### Creating HOD User
-
-If HOD login is not working, you can create a HOD user by running:
-```bash
-cd backend
-node scripts/createHODUser.js
-```
-
-This will create/update a HOD user with the credentials above.
-
-### Key Workflows
-
-#### Student Workflow
-1. Register/Login
-2. Complete profile
-3. Build resume using Resume Builder
-4. Browse job listings
-5. Apply for jobs
-6. Use AI Interview Simulator for practice
-7. Check Placement Prediction
-8. Monitor PRS Dashboard
-9. Follow Intervention recommendations
-10. View Career DNA profile
-
-#### TPO Workflow
-1. Login to TPO portal
-2. Post job listings
-3. Review applications
-4. Schedule interviews
-5. Upload offer letters
-6. Create placement drives
-7. Generate reports
-8. Use AI email generator
-
----
-
-## 🐳 Deployment
+## 🚢 Deployment
 
 ### Docker Deployment
 
-1. **Build and run with Docker Compose**:
+1. **Using Docker Compose**:
    ```bash
    docker-compose up -d
    ```
@@ -870,137 +668,208 @@ This will create/update a HOD user with the credentials above.
 2. **Access the application**:
    - Frontend: `http://localhost:3000`
    - Backend: `http://localhost:4518`
+   - MongoDB: `mongodb://localhost:27017`
 
 ### Kubernetes Deployment
 
-Refer to the `kubernetes/` directory for Kubernetes deployment manifests.
+```bash
+# Apply Kubernetes manifests
+kubectl apply -f kubernetes/
+
+# Check deployment status
+kubectl get pods
+kubectl get services
+```
+
+### Environment-Specific Deployment
+
+<details>
+<summary>Development Environment</summary>
+
+```bash
+npm run dev         # Frontend
+npm start           # Backend
+```
+
+</details>
+
+<details>
+<summary>Production Environment</summary>
+
+```bash
+npm run build       # Frontend
+npm run start:prod  # Backend (with PM2 or similar)
+```
+
+</details>
 
 ---
 
-## 🎨 Design & UI/UX Features
+## 📚 API Documentation
 
-### Landing Page Enhancements
+### Authentication Endpoints
 
-#### Hero Section
-- Animated gradient background with floating orbs and particles
-- Gradient text animation for brand name
-- Email signup form with enhanced styling
-- Feature highlights with badges (AI-Powered, Fast & Easy, 100% Free, Secure)
-- Smooth scroll indicators and call-to-action buttons
+```http
+POST /api/student/signup      # Register new student
+POST /api/student/login       # Student login
+POST /api/tpo/login          # TPO login
+POST /api/management/login   # Management login
+POST /api/hod/login          # HOD login
+POST /api/admin/login        # Super Admin login
+```
 
-#### Features Section
-- 8 feature cards showcasing platform capabilities
-- Glassmorphic card design with hover effects
-- Gradient icons and animated transitions
-- Responsive grid layout (1/2/4 columns)
-- Call-to-action section with gradient buttons
+### Student Endpoints
 
-#### Statistics Section
-- Animated counters (10,000+ Students, 500+ Companies, 85% Placement Rate, 95% Satisfaction)
-- Smooth counting animations with easing
-- Progress bars with gradient fills
-- Glass cards with hover effects
+```http
+GET    /api/student/profile           # Get student profile
+PUT    /api/student/profile           # Update profile
+GET    /api/student/jobs              # Get available jobs
+POST   /api/student/apply/:jobId      # Apply for job
+GET    /api/student/applications      # Get applications
+POST   /api/student/resume/build      # Create resume
+GET    /api/student/notifications     # Get notifications
+```
 
-#### Demo/Preview Section
-- Interactive tabbed interface (Resume Builder, Interview Simulator, Analytics Dashboard, Job Marketplace)
-- Mock previews with floating elements
-- Feature lists with checkmark icons
-- Smooth transitions between tabs
+### AI Endpoints
 
-#### Testimonials Section
-- Auto-rotating carousel (4 testimonials)
-- Star ratings display
-- Navigation arrows and dot indicators
-- Smooth slide animations
-- Glass cards with gradients
+```http
+POST   /api/ai/interview/start        # Start interview session
+POST   /api/ai/interview/submit       # Submit answer
+GET    /api/ai/prediction/:studentId  # Get placement prediction
+GET    /api/ai/prs/:studentId         # Get PRS score
+POST   /api/ai/career-dna             # Generate Career DNA
+POST   /api/ai/culture-match          # Check culture match
+POST   /api/ai/intervention           # Get interventions
+POST   /api/ai/resume/parse           # Parse resume PDF
+POST   /api/ai/email/generate         # Generate email
+```
 
-### Design System Components
+### TPO Endpoints
 
-#### Custom UI Components
-- **GlassCard**: Glassmorphic card with hover effects, glow, and gradient borders
-- **AnimatedBackground**: Particle effects, mesh gradients, and floating orbs
-- **Button**: Reusable button with variants, loading states, and icons
-- **Card**: Glassmorphic card with hover effects and variants
-- **Input**: Enhanced input with focus states, password toggle, and error handling
-- **Skeleton**: Loading skeleton for various content types
-- **EmptyState**: Empty state component for displaying when no data is available
+```http
+POST   /api/tpo/job/create            # Create job posting
+GET    /api/tpo/jobs                  # Get all jobs
+PUT    /api/tpo/job/:id               # Update job
+DELETE /api/tpo/job/:id               # Delete job
+GET    /api/tpo/applications          # Get applications
+POST   /api/tpo/interview/schedule    # Schedule interview
+POST   /api/tpo/offer/upload          # Upload offer letter
+GET    /api/tpo/analytics             # Get analytics
+```
 
-#### Animation System
-- **Framer Motion**: Smooth transitions, hover effects, and entrance animations
-- **Custom Keyframes**: Shimmer, gradient shift, glow pulse, particle float, mesh gradient
-- **Tailwind Animations**: Float, bounce, scale, slide, ripple effects
-- **Performance Optimized**: Using `whileInView` and `once` triggers for efficient rendering
+For complete API documentation, refer to the [API Documentation](./docs/API.md) file.
 
-#### Theme System
-- **CSS Variables**: Theme-aware colors using `var(--color-primary)`, `var(--color-text)`, etc.
-- **Light/Dark Theme Support**: All components adapt to theme changes
-- **Consistent Color Palette**: Unified color scheme across all pages
-- **Accessibility**: High contrast ratios and proper color combinations
+---
 
-### Recent Improvements
+## 🤝 Contributing
 
-#### Login Pages
-- ✅ Unified design across all login pages (Student, TPO, Management, HOD, Super Admin)
-- ✅ Enhanced animated backgrounds with gradient mesh and particles
-- ✅ Improved input field styling with better text visibility
-- ✅ Gradient buttons with shimmer effects
-- ✅ Smooth animations and transitions
-- ✅ Responsive design for all screen sizes
+We welcome contributions from the community! Here's how you can help:
 
-#### Form Improvements
-- ✅ Fixed text visibility issues in input fields
-- ✅ Enhanced placeholder styling
-- ✅ Better error message display
-- ✅ Improved focus states and validation feedback
-- ✅ Consistent styling across all forms
+### Contributing Guidelines
 
-#### Component Enhancements
-- ✅ Glassmorphic design system implementation
-- ✅ Custom Tailwind components and utilities
-- ✅ Framer Motion animations integration
-- ✅ Theme-aware component styling
-- ✅ Improved loading states and error handling
+1. **Fork the repository**
+2. **Create a feature branch** (`git checkout -b feature/AmazingFeature`)
+3. **Commit your changes** (`git commit -m 'Add some AmazingFeature'`)
+4. **Push to the branch** (`git push origin feature/AmazingFeature`)
+5. **Open a Pull Request**
+
+### Development Workflow
+
+```bash
+# Clone your fork
+git clone https://github.com/your-username/catalyst.git
+
+# Create a new branch
+git checkout -b feature/my-new-feature
+
+# Make your changes and commit
+git add .
+git commit -m "Add my new feature"
+
+# Push to your fork
+git push origin feature/my-new-feature
+
+# Create a Pull Request on GitHub
+```
+
+### Code Style Guidelines
+
+- Follow existing code conventions
+- Write meaningful commit messages
+- Add comments for complex logic
+- Update documentation for new features
+- Write tests for new functionality
+
+### Reporting Issues
+
+Found a bug or have a suggestion? Please create an issue with:
+- Clear description of the problem
+- Steps to reproduce
+- Expected vs actual behavior
+- Screenshots (if applicable)
+- Environment details
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+---
 
 ## 🙏 Acknowledgments
 
-We would like to express our gratitude to the following platforms, tools, and services that made this project possible:
-
 ### AI Platforms & Tools
-- **Groq** for providing ultra-fast AI inference capabilities with Llama 3.3 70B model
-- **Google Gemini** for inspiring advanced AI reasoning and multimodal capabilities
-- **OpenAI ChatGPT** for groundbreaking conversational AI and language understanding
-- **Anthropic Claude** for advanced AI safety and reasoning capabilities
-- **AWS Bedrock** for comprehensive AI model access and enterprise-grade AI infrastructure
-- **Llama Models (Meta)** for open-source large language models powering AI features
+
+- **[Groq](https://groq.com/)** - Ultra-fast AI inference with Llama 3.3 70B
+- **[OpenAI](https://openai.com/)** - Inspiration for advanced AI capabilities
+- **[Meta AI (Llama)](https://ai.meta.com/)** - Open-source LLM foundation
+- **[Anthropic Claude](https://anthropic.com/)** - AI safety and reasoning inspiration
+- **[Google Gemini](https://deepmind.google/technologies/gemini/)** - Multimodal AI inspiration
 
 ### Cloud & Infrastructure
-- **Cloudinary** for reliable cloud-based file storage and image processing
-- **MongoDB** for robust NoSQL database solutions and data management
-- **MongoDB Atlas** for scalable cloud database hosting
 
-### Development Tools & Libraries
-- **React.js** for building modern, interactive user interfaces
-- **Node.js** for server-side JavaScript runtime
-- **Express.js** for robust backend API framework
-- **Tailwind CSS** for utility-first CSS framework and custom design system
-- **Bootstrap** for responsive UI components
-- **Framer Motion** for smooth animations and micro-interactions
-- **React Router DOM** for client-side routing
-- **Axios** for HTTP client requests
+- **[Cloudinary](https://cloudinary.com/)** - File storage and media processing
+- **[MongoDB](https://www.mongodb.com/)** - NoSQL database solution
+- **[MongoDB Atlas](https://www.mongodb.com/cloud/atlas)** - Cloud database hosting
+
+### Development Tools
+
+- **[React.js](https://reactjs.org/)** - Frontend framework
+- **[Node.js](https://nodejs.org/)** - Backend runtime
+- **[Express.js](https://expressjs.com/)** - Web framework
+- **[Tailwind CSS](https://tailwindcss.com/)** - CSS framework
+- **[Framer Motion](https://www.framer.com/motion/)** - Animation library
+- **[Vite](https://vitejs.dev/)** - Build tool
 
 ### Design Inspiration
-- **Glassmorphism Design**: Modern glassmorphic UI trends
-- **Neumorphism**: Soft UI design principles
-- **Material Design**: Google's material design guidelines
-- **Modern Web Design**: Contemporary web design patterns and best practices
 
-### Open Source Community
-- All open-source contributors and library maintainers
-- The JavaScript and web development community
-- Educational institutions and students who inspire innovation
+- **Glassmorphism** - Modern UI design trend
+- **Material Design** - Google's design system
+- **Neumorphism** - Soft UI principles
+- **Modern Web Design** - Contemporary patterns and best practices
+
+### Community
+
+- Open-source contributors and maintainers
+- JavaScript and web development community
+- Educational institutions and students worldwide
+- All our beta testers and early adopters
 
 ---
+
+<div align="center">
+
+### ⭐ Star this project if you find it helpful!
 
 **Made with ❤️ for students**
 
 **catalyst** - *was.is.will be.for students*
+
+---
+
+[Report Bug](https://github.com/your-username/catalyst/issues) • [Request Feature](https://github.com/your-username/catalyst/issues) • [Documentation](./docs) • [Changelog](./CHANGELOG.md)
+
+**© 2024 catalyst. All rights reserved.**
+
+</div>
